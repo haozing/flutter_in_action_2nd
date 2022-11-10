@@ -35,16 +35,16 @@ TextButton(
 )
 ```
 
-## 3.2.3 OutlineButton
+## 3.2.3 OutlinedButton
 
-`OutlineButton`默认有一个边框，不带阴影且背景透明。按下后，边框颜色会变亮、同时出现背景和阴影(较弱)，如图 3-8 所示：
+`OutlinedButton`默认有一个边框，不带阴影且背景透明。按下后，边框颜色会变亮、同时出现背景和阴影(较弱)，如图 3-8 所示：
 
 ![图3-8](../imgs/3-8.png)
 
-使用`OutlineButton`也很简单，代码如下：
+使用`OutlinedButton`也很简单，代码如下：
 
 ```dart
-OutlineButton(
+OutlinedButton(
   child: Text("normal"),
   onPressed: () {},
 )
@@ -69,7 +69,7 @@ IconButton(
 
 ## 3.2.5 带图标的按钮
 
-`ElevatedButton`、`TextButton`、`OutlineButton`都有一个`icon` 构造函数，通过它可以轻松创建带图标的按钮，如图3-10所示：
+`ElevatedButton`、`TextButton`、`OutlinedButton`都有一个`icon` 构造函数，通过它可以轻松创建带图标的按钮，如图3-10所示：
 
 ![图3-10](../imgs/3-10.png)
 
@@ -81,7 +81,7 @@ ElevatedButton.icon(
   label: Text("发送"),
   onPressed: _onPressed,
 ),
-OutlineButton.icon(
+OutlinedButton.icon(
   icon: Icon(Icons.add),
   label: Text("添加"),
   onPressed: _onPressed,
